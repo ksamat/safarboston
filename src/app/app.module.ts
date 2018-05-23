@@ -8,9 +8,12 @@ import { ServicesPage } from '../pages/services/services';
 import { VideosPage } from '../pages/videos/videos';
 import { PhotosPage } from '../pages/photos/photos';
 import { ContactPage } from '../pages/contact/contact';
+import { StylistsPage } from '../pages/stylists/stylists';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StylistProvider } from '../providers/stylist/stylist';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ServicesPage,
     VideosPage,
     PhotosPage,
-    ContactPage
+    ContactPage,
+    StylistsPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -32,12 +37,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ServicesPage,
     VideosPage,
     PhotosPage,
-    ContactPage
+    ContactPage,
+    StylistsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    StylistProvider
   ]
 })
 export class AppModule {}

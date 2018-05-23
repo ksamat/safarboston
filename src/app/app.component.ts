@@ -8,6 +8,7 @@ import { ServicesPage } from '../pages/services/services';
 import { VideosPage } from '../pages/videos/videos';
 import { PhotosPage } from '../pages/photos/photos';
 import { ContactPage } from '../pages/contact/contact';
+import { StylistsPage } from '../pages/stylists/stylists';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'Services', component: ServicesPage },
       { title: 'Videos', component: VideosPage },
       { title: 'Photos', component: PhotosPage },
-      { title: 'Contact', component: ContactPage }
+      { title: 'Contact', component: ContactPage },
+      { title: 'Stylists', component: StylistsPage }
     ];
 
   }
