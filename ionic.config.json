@@ -1,0 +1,8 @@
+{
+  "name": "safarboston",
+  "app_id": "087e4fc4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
