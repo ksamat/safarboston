@@ -16,16 +16,16 @@ import { StylistProvider } from '../../providers/stylist/stylist';
 })
 export class StylistsPage {
 
-  stylists = [];
+  stylists;
 
   constructor(
     private stylistProvider: StylistProvider,
     public navCtrl: NavController, 
     public navParams: NavParams) {
+      this.stylists = this.stylistProvider.getStylists();
   }
 
   ionViewDidLoad() {
-    this.stylists = this.stylistProvider.getStylists();
     console.log('ionViewDidLoad StylistsPage');
   }
 

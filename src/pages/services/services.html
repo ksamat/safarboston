@@ -17,25 +17,58 @@
 <ion-content>
 
   <img src="./assets/imgs/menu header2-01.png" />
-  <h1>STYLING</h1>
-  <ion-grid>
-    <ion-row>
-      <ion-col>Cut & Blowdry</ion-col>
-      <ion-col align-items-end>women / men	</ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-      <ion-col></ion-col>
-    </ion-row>
-  </ion-grid>
+
+  <!-- <ion-card *ngFor="let service of services">
+      <ion-card-header>{{service.header}}</ion-card-header>
+      <ion-card-content>
+        <ion-list style="background-color: transparent">
+            <ion-item *ngFor="let menu of service.menus">
+                {{menu.name}}
+                <ion-badge item-end style="background-color: #212121;">{{menu.value}}</ion-badge>
+              </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card> -->
+
+    <ion-grid padding>
+        <ion-row>
+          <ion-col><b>STYLING</b></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Cut & Blowdry</ion-col>
+          <ion-col>women / men</ion-col>
+        <ion-row>
+          <ion-col>– Creative Director</ion-col>
+          <ion-col>95 / 75</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>– Senior Stylist</ion-col>
+          <ion-col>70 / 55</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>– Top Stylist</ion-col>
+          <ion-col>65 / 55</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>– Stylist/First Time</ion-col>
+          <ion-col>60 / 50</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Blowdry</ion-col>
+          <ion-col>40	+</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Updo Chingon</ion-col>
+          <ion-col>85	+</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Flat/Curling Iron</ion-col>
+          <ion-col>25	+</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>Extensions</ion-col>
+            <ion-col>call</ion-col>
+          </ion-row>
+    </ion-grid>
 
 </ion-content>
