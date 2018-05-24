@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { StylistProvider } from '../../providers/stylist/stylist';
+import { StylistPage } from '../stylist/stylist';
 
 /**
  * Generated class for the StylistsPage page.
@@ -27,6 +28,11 @@ export class StylistsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StylistsPage');
+  }
+
+  itemClicked(stylist) {
+    console.log("Salem");
+    this.navCtrl.push(StylistPage, stylist);
   }
 
 }

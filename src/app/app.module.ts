@@ -15,6 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StylistProvider } from '../providers/stylist/stylist';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceProvider } from '../providers/service/service';
+import { StylistPage } from '../pages/stylist/stylist';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ServiceProvider } from '../providers/service/service';
     VideosPage,
     PhotosPage,
     ContactPage,
-    StylistsPage
+    StylistsPage,
+    StylistPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { ServiceProvider } from '../providers/service/service';
     VideosPage,
     PhotosPage,
     ContactPage,
-    StylistsPage
+    StylistsPage,
+    StylistPage
   ],
   providers: [
     StatusBar,

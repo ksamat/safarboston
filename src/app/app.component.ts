@@ -16,7 +16,7 @@ import { StylistsPage } from '../pages/stylists/stylists';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = AboutPage;
+  rootPage: any = ContactPage;
 
   pages: Array<{title: string, component: any}>;
 

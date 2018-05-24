@@ -86,4 +86,8 @@
         <variable name="CHANNEL_NAME" value="Master" />
         <variable name="UPDATE_METHOD" value="auto" />
     </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="^2.3.4">
+        <variable name="API_KEY_FOR_ANDROID" value="(AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4)" />
+        <variable name="API_KEY_FOR_IOS" value="(AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4)" />
+    </plugin>
 </widget>

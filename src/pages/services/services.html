@@ -30,45 +30,56 @@
       </ion-card-content>
     </ion-card> -->
 
-    <ion-grid padding>
-        <ion-row>
-          <ion-col><b>STYLING</b></ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Cut & Blowdry</ion-col>
-          <ion-col>women / men</ion-col>
-        <ion-row>
-          <ion-col>– Creative Director</ion-col>
-          <ion-col>95 / 75</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>– Senior Stylist</ion-col>
-          <ion-col>70 / 55</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>– Top Stylist</ion-col>
-          <ion-col>65 / 55</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>– Stylist/First Time</ion-col>
-          <ion-col>60 / 50</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Blowdry</ion-col>
-          <ion-col>40	+</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Updo Chingon</ion-col>
-          <ion-col>85	+</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Flat/Curling Iron</ion-col>
-          <ion-col>25	+</ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col>Extensions</ion-col>
-            <ion-col>call</ion-col>
-          </ion-row>
+    <ion-grid *ngFor="let service of services" padding>
+      <ion-row>
+        <ion-col><b>{{service.header}}</b></ion-col>
+      </ion-row>
+      <ion-row *ngFor="let menu of service.menus">
+        <ion-col>{{menu.name}}</ion-col>
+        <ion-col push-3>{{menu.value}}</ion-col>
+      </ion-row>
     </ion-grid>
+
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col><b>STYLING</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Cut & Blowdry</ion-col>
+        <ion-col>women / men</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>– Creative Director</ion-col>
+        <ion-col>95 / 75</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>– Senior Stylist</ion-col>
+        <ion-col>70 / 55</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>– Top Stylist</ion-col>
+        <ion-col>65 / 55</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>– Stylist/First Time</ion-col>
+        <ion-col>60 / 50</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Blowdry</ion-col>
+        <ion-col>40	+</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Updo Chingon</ion-col>
+        <ion-col>85	+</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Flat/Curling Iron</ion-col>
+        <ion-col>25	+</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Extensions</ion-col>
+        <ion-col>call</ion-col>
+      </ion-row>
+    </ion-grid> -->
 
 </ion-content>
