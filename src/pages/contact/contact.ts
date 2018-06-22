@@ -22,10 +22,10 @@ export class ContactPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactPage');
-    this.map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
-    });
+    // this.map = new google.maps.Map(document.getElementById('map'), {
+    //   center: {lat: -34.397, lng: 150.644},
+    //   zoom: 8
+    // });
     // let mapOptions: GoogleMapOptions = {
     //   camera: {
     //      target: {

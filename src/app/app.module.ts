@@ -14,8 +14,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StylistProvider } from '../providers/stylist/stylist';
 import { HttpClientModule } from '@angular/common/http';
+
+
 import { ServiceProvider } from '../providers/service/service';
 import { StylistPage } from '../pages/stylist/stylist';
+import { VideoPage } from "../pages/video/video";
+
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +32,8 @@ import { StylistPage } from '../pages/stylist/stylist';
     PhotosPage,
     ContactPage,
     StylistsPage,
-    StylistPage
+    StylistPage,
+    VideoPage
   ],
   imports: [
     BrowserModule,
@@ -42,14 +49,16 @@ import { StylistPage } from '../pages/stylist/stylist';
     PhotosPage,
     ContactPage,
     StylistsPage,
-    StylistPage
+    StylistPage,
+    VideoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     StylistProvider,
-    ServiceProvider
+    ServiceProvider,
+    YoutubeVideoPlayer
   ]
 })
 export class AppModule {}

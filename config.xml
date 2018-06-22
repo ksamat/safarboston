@@ -19,6 +19,7 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="YouTubeDataApiKey" value="AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -90,4 +91,5 @@
         <variable name="API_KEY_FOR_ANDROID" value="(AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4)" />
         <variable name="API_KEY_FOR_IOS" value="(AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4)" />
     </plugin>
+    <plugin name="cordova-plugin-youtube-video-player" spec="^1.0.6" />
 </widget>

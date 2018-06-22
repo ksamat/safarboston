@@ -31,8 +31,7 @@ export class StylistsPage {
   }
 
   itemClicked(stylist) {
-    console.log("Salem");
-    this.navCtrl.push(StylistPage, stylist);
+    this.navCtrl.push(StylistPage, stylist); // jiberip jatir
   }
 
 }
