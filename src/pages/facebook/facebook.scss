@@ -1,8 +1,9 @@
-page-contact {
+page-facebook {
     ion-content{
         background-image: url('/assets/imgs/background-plain-01.png');
         background-size: 100%;
     }
+
     ion-header {
         .toolbar {
           position: absolute;
@@ -15,6 +16,7 @@ page-contact {
           }
         }
       }
+
       ion-title {
         position: absolute;
         top: 0;
@@ -24,5 +26,7 @@ page-contact {
         height: 100%;
         text-align: center;
       }
-      
+
+   
+
 }

@@ -9,6 +9,11 @@ import { VideosPage } from '../pages/videos/videos';
 import { PhotosPage } from '../pages/photos/photos';
 import { ContactPage } from '../pages/contact/contact';
 import { StylistsPage } from '../pages/stylists/stylists';
+import { PromotionsPage } from '../pages/promotions/promotions';
+import { AppointmentsPage } from '../pages/appointments/appointments';
+import { FacebookPage } from '../pages/facebook/facebook';
+import { LookbookPage } from '../pages/lookbook/lookbook';
+import { TwitterPage } from '../pages/twitter/twitter';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,6 +26,9 @@ import { StylistPage } from '../pages/stylist/stylist';
 import { VideoPage } from "../pages/video/video";
 
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
+
+
 
 
 @NgModule({
@@ -33,12 +41,18 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
     ContactPage,
     StylistsPage,
     StylistPage,
-    VideoPage
+    VideoPage,
+    PromotionsPage,
+    AppointmentsPage,
+    FacebookPage,
+    LookbookPage,
+    TwitterPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,7 +64,13 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
     ContactPage,
     StylistsPage,
     StylistPage,
-    VideoPage
+    VideoPage,
+    PromotionsPage,
+    AppointmentsPage,
+    FacebookPage,
+    LookbookPage,
+    TwitterPage
+
   ],
   providers: [
     StatusBar,

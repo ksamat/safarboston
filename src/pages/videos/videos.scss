@@ -3,4 +3,46 @@ page-videos {
         background-image: url('/assets/imgs/background-plain-01.png');
         background-size: 100%;
     }
+
+    // ion-thumbnail img {
+    //     width: 500px;
+    //     height: 44px;
+    //     display: block;
+    //     margin: 20px auto;
+    //   }
+
+
+      ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: rgba(0, 0, 0, 0.5);
+          }
+          .toolbar-title {
+            color: white;
+          }
+        }
+      }
+      ion-list {
+        padding-top: 30px;
+      }
+
+      p { 
+       
+        background: rgba(255, 255, 255, .2);
+        color:white;
+        margin-top: -10px;
+        padding: 15px;
+      
+    }
+    ion-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 90px 1px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
 }

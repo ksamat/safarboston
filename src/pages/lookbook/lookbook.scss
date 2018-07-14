@@ -1,8 +1,36 @@
-page-contact {
+page-lookbook {
+  .images{
+    padding-top: 40px;
+  }
+
+@media (min-width: 0px) {
+  .images {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 420px) {
+  .images {
+      column-count: 3;
+  }
+}
+
+@media (min-width: 720px) {
+  .images {
+      column-count: 4;
+  }
+}
+
+//.one-image {
+ // margin: 2px;
+//}
+
     ion-content{
         background-image: url('/assets/imgs/background-plain-01.png');
         background-size: 100%;
     }
+
+
     ion-header {
         .toolbar {
           position: absolute;
@@ -15,6 +43,7 @@ page-contact {
           }
         }
       }
+
       ion-title {
         position: absolute;
         top: 0;

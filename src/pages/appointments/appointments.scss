@@ -1,7 +1,9 @@
-page-contact {
+page-appointments {
     ion-content{
-        background-image: url('/assets/imgs/background-plain-01.png');
+        background-image: url('/assets/imgs/app-buttons-02.jpg'), url('/assets/imgs/app-buttons-01.jpg');
+        background-repeat: repeat-x, repeat;
         background-size: 100%;
+      
     }
     ion-header {
         .toolbar {
@@ -26,3 +28,5 @@ page-contact {
       }
       
 }
+
+

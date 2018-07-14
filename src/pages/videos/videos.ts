@@ -28,6 +28,7 @@ export class VideosPage {
     private youtube: YoutubeVideoPlayer,
     public navCtrl: NavController, 
     public navParams: NavParams) {
+     
   }
 
   ionViewDidLoad() {
@@ -40,6 +41,7 @@ export class VideosPage {
     openVideo(video) {
       // this.navCtrl.push(VideoPage, video); 
       this.youtube.openVideo(video.snippet.resourceId.videoId);
+      console.log(video);
     }
   }
 

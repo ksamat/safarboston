@@ -218,14 +218,6 @@ export class StylistProvider {
       ]
     },
     {
-      name: "Mariya",
-      position: "Esthetician",
-      img: "http://safarboston.com/wp-content/uploads/2016/03/Mariya_medium.jpg",
-      about: [
-        "Mariya likes to think of her clients at Safar as her family, where she has been working for over 20 years. She has taken many advanced classes over the years in skincare, waxing and nail techniques. She loves perfecting brows and facials, as well as helping her clients to choose the right skincare routine. Mariya’s clients come from all over the east coast just to see her."
-      ]
-    },
-    {
       name: "Tanya",
       position: "Esthetician",
       img: "http://safarboston.com/wp-content/uploads/2016/03/Tanya_medium.jpg",
@@ -240,6 +232,15 @@ export class StylistProvider {
       about: [
         "A graduate of Empire Beauty School in Boston, MA, Amanda has been with Safar for over three years.",
         "Amanda specializes in women’s hair color, foil, and balayage. She has training in René Furterer, Kérastase, Goldwell, Scharphof, and Brazilian blowouts. She has also assisted in the creation of various fashion shoots and shows for Safar."
+      ]
+    },
+    {
+      name: "Daniel",
+      position: "Stylist",
+      img: "http://safarboston.com/wp-content/uploads/2017/06/IMG_3830.JPG.jpg",
+      about: [
+        "Daniel is a talented graduate of the Empire Beauty School in Boston, MA.",
+        "He specializes in taming unruly hair for both male and female. He has experience in Brazilian blowouts, Moroccan Oil styling, and Kérastase as well as advanced experience in balayage. Daniel specializes in creative cutting."
       ]
     }
   ];

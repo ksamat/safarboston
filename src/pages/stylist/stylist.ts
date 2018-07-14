@@ -18,11 +18,11 @@ export class StylistPage {
   stylist;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log(navParams);
-    this.stylist = navParams.data; // kabildap alip jatir
+    this.stylist = navParams.data; // kabildap alyp zhatyr
   }
 
   ionViewDidLoad() {
+    console.log('ionViewDidLoad StylistPage');
     console.log(this.stylist);
   }
 

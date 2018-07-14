@@ -9,6 +9,11 @@ import { VideosPage } from '../pages/videos/videos';
 import { PhotosPage } from '../pages/photos/photos';
 import { ContactPage } from '../pages/contact/contact';
 import { StylistsPage } from '../pages/stylists/stylists';
+import { PromotionsPage } from '../pages/promotions/promotions';
+import { AppointmentsPage } from '../pages/appointments/appointments';
+import { FacebookPage } from '../pages/facebook/facebook';
+import { LookbookPage } from '../pages/lookbook/lookbook';
+import { TwitterPage } from '../pages/twitter/twitter';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +35,16 @@ export class MyApp {
       { title: 'Videos', component: VideosPage },
       { title: 'Photos', component: PhotosPage },
       { title: 'Contact', component: ContactPage },
-      { title: 'Stylists', component: StylistsPage }
+      { title: 'Stylists', component: StylistsPage },
+      { title: 'Promotions', component: PromotionsPage },
+      { title: 'Appointments', component: AppointmentsPage },
+      { title: 'Facebook', component: FacebookPage },
+      { title: 'Twitter', component: TwitterPage },
+      {title: 'Lookbook', component: LookbookPage }
+
+
+
+      
     ];
 
   }
