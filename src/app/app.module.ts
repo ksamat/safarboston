@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Facebook } from '@ionic-native/facebook';
+import { EmailComposer } from '@ionic-native/email-composer';
+import { GoogleMaps } from '@ionic-native/google-maps';
+
 
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
@@ -27,9 +31,6 @@ import { VideoPage } from "../pages/video/video";
 
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
-
-
-
 
 @NgModule({
   declarations: [
@@ -78,7 +79,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     StylistProvider,
     ServiceProvider,
-    YoutubeVideoPlayer
+    YoutubeVideoPlayer,
+    Facebook,
+    EmailComposer,
+    GoogleMaps
   ]
 })
 export class AppModule {}

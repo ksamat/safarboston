@@ -42,13 +42,12 @@
             <ion-icon style="color: white" name="call" item-start></ion-icon>
             <p style="color: white;">617 247 81 04</p>
           </ion-item>
-          <ion-item style="background-color: transparent">
+          <ion-item style="background-color: transparent" (click)="send2Email()">
             <ion-icon style="color: white" name="mail" item-start></ion-icon>
             <p style="color: white;">reservations@safarboston.com</p>
           </ion-item>
         </ion-card-content>
       </ion-card>
-
       <ion-card style="color: white; background-color: rgba(255, 255, 255, .1)">
         <ion-card-header style="color: white">
           <b>GENERAL INFORMATION</b>
@@ -58,18 +57,48 @@
             <ion-icon style="color: white" name="call" item-start></ion-icon>
             <p style="color: white;">617 247 39 33</p>
           </ion-item>
-          <ion-item style="background-color: transparent">
+          <ion-item style="background-color: transparent" (click)="sendEmail()">
             <ion-icon style="color: white" name="mail" item-start></ion-icon>
             <p style="color: white;">info@safarboston.com</p>
           </ion-item>
           <ion-item style="background-color: transparent">
             <ion-icon style="color: white" name="globe" item-start></ion-icon>
-            <p style="color: white;">safarboston.com</p>
+            <p><a style="color: white; text-decoration:none" class="item" href="#" onclick="window.open('http://safarboston.com/', '_system', 'location=yes'); return false;">
+              safarboston.com
+            </a></p>
+          </ion-item>
+          <ion-item style="background-color: transparent">
+            <ion-icon style="color: white" name="logo-facebook" item-start></ion-icon>
+            <p><a style="color: white; text-decoration:none" class="item" href="#" onclick="window.open('https://www.facebook.com/safarboston/', '_system', 'location=yes'); return false;">
+              Facebook
+            </a></p>
+          </ion-item>
+          <ion-item style="background-color: transparent">
+            <ion-icon style="color: white" name="logo-twitter" item-start></ion-icon>
+            <p><a style="color: white; text-decoration:none" class="item" href="#" onclick="window.open('https://twitter.com/safarboston/', '_system', 'location=yes'); return false;">
+              Twitter
+            </a></p>
+          </ion-item>
+          <ion-item style="background-color: transparent">
+            <ion-icon style="color: white" name="logo-youtube" item-start></ion-icon>
+            <p><a style="color: white; text-decoration:none" class="item" href="#" onclick="window.open('https://www.youtube.com/channel/UCkwBHde8LoyxAfo1LK-dtnw/', '_system', 'location=yes'); return false;">
+              Youtube
+            </a></p>
+          </ion-item>
+          <ion-item style="background-color: transparent">
+            <ion-icon style="color: white" name="logo-instagram" item-start></ion-icon>
+            <p><a style="color: white; text-decoration:none" class="item" href="#" onclick="window.open('https://www.instagram.com/safarboston/', '_system', 'location=yes'); return false;">
+              Instagram
+            </a></p>
           </ion-item>
         </ion-card-content>
       </ion-card>
 
-      <div #map></div>
+      <!-- <div #map></div> -->
+     
+        <!-- <div #map id="map" style="height:100px; width:100px"></div> -->
+
+      <div id="map_canvas"></div>
 
       <ion-card style="color: white; background-color: rgba(255, 255, 255, .1)">
         <ion-card-header style="color: white">

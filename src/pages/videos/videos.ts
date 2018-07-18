@@ -18,7 +18,7 @@ import 'rxjs/add/operator/map';
   templateUrl: 'videos.html',
 })
 export class VideosPage {
-  apiKey = 'AIzaSyDkQSkfOOKZVwZ8icucD4WevHNkIAOahx4';
+  apiKey = '';
   listId = 'PLJW9UKWPMY8bnfZMh7Ja9ET9mKFCOWgyF';
   videos = [];
 

@@ -15,6 +15,7 @@ page-contact {
           }
         }
       }
+      
       ion-title {
         position: absolute;
         top: 0;
@@ -23,6 +24,11 @@ page-contact {
         width: 100%;
         height: 100%;
         text-align: center;
+      }
+
+      #map_canvas {
+        height: 100px;
+        width: 100%;
       }
       
 }

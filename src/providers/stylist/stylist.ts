@@ -17,7 +17,7 @@ export class StylistProvider {
       img: "http://safarboston.com/wp-content/uploads/2016/03/Serge_medium.jpg",
       about: [
         "Hailing from the South of France, Serge’s hair techniques exhibit his European training and traditions passed on by his hairstylist father. His vision of beauty is timeless, but continuously evolving to adjust to the fast-paced world of fashion. Serge’s artistic ability has brought him recognition from acclaimed fashion houses such as Zac Posen, Prada, Rad Hourani, and Matthew Ames, to name a few.",
-        "Whether he is spritzing the heads of models for runway shows, shaping the locks of Japan’s royalty, or simply giving a trim to a client at his salon, Serge’s ultimate goal is to bring joy to his clients by translating their own vision into a look that is versatile, modern and sophisticated while being effortless."
+        "Whether he is spritzing the heads of models for runway shows, shng the locks of Japan’s royalty, or simply giving a trim to a client at his salon, Serge’s ultimate goal is to bring joy to his clients by translating their own vision into a look that is versatile, modern and sophisticated while being effortless."
       ]
     },
     {
